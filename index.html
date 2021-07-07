@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2> Furniture</h2>
+        </div>
+        <ul class="navigation">
+            <li onclick="toggle()"><a href="#landing"> Home</a></li>
+            <li onclick="toggle()"><a href="#about"> About</a></li>
+            <li onclick="toggle()"><a href="#gallary"> Gallary </a></li>
+            <li onclick="toggle()"><a href="#contact"> Contact</a></li>
+        </ul>
+        <div class="menu" onclick="toggle()"></div>
+    </header>
+
+    <section class="landing" id="landing">
+        <div class="texts">
+            <h3> Beauty, Smooth & Elegant</h3>
+            <h1> Modern Furnitures</h1>
+            <p> Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor. </p>
+            <a href="#"> Learn About US</a>
+        </div>
+
+        <div class="picture">
+            <img  id="img1" src="images/furniture.jpeg" alt="">
+            <img id="img2" src="images/furniture2.jpeg" alt="">
+            <img id="img3" src="images/furniture3.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="texts">
+            <h1>Best furnitures for you</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" id=""> Contact Us Now</a>
+        </div>
+
+        <div class="features">
+           <div class="flex">
+                <div class="flex-item first">
+                    <h2> <i class="fas fa-gem fa-2x"></i>Durable</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="flex-item">
+                    <h2> <i class="fas fa-heart fa-2x"></i> Reliable</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+           </div>
+
+           <div class="flex">
+            <div class="flex-item first">
+                <h2> <i class="fas fa-greater-than-equal fa-2x"></i> Quality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="flex-item">
+                <h2> <i class="fas fa-ruble-sign fa-2x"></i>Price</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+       </div>
+        </div>
+    </section>
+
+    <section class="gallary" id="gallary">
+        <div class="texts center">
+            <h1> Our Galleries</h1>
+            <p> Lorem, ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="pictures">
+            <img src="images/living.jpeg" alt="">
+            <img src="images/drawing.jpeg" alt="">
+            <img src="images/sofa.jpeg" alt="">
+        
+            <img src="images/sofa2.jpeg" class="hide" alt="">
+            <img src="images/chair.jpeg" alt="">
+            <img src="images/drawer.jpeg" alt="">
+        
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="message-box">
+            <div class="inner">
+                <h2> Drop us a message</h2>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button> Send Message</button>
+                </form>
+            </div>
+            <img src="images/green.jpeg" alt="">
+        </div>
+
+    </section>
+
+    <footer>
+        <h3> Copyright  &copy; 2021</h3>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>

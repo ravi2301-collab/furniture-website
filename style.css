@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 3rem;
+  height: 130px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  transition: all 0.5s;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header.active {
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  transform: translateX(20px);
+}
+.logo h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+}
+.navigation li {
+  margin-right: 20px;
+}
+.navigation li a {
+  font-size: larger;
+  text-decoration: none;
+}
+.menu {
+  display: none;
+}
+/* Landing section */
+.landing {
+  padding: 3rem;
+  position: relative;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  margin-top: 130px;
+  transition: all 0.5s;
+}
+
+.texts {
+  padding: 2rem;
+  line-height: 3;
+}
+
+.texts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.texts p {
+  font-size: larger;
+  margin-bottom: 40px;
+}
+
+.texts a {
+  background-color: darkgreen;
+  padding: 1.3rem;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.texts a:hover {
+  letter-spacing: 5px;
+}
+.picture {
+  max-width: fit-content;
+}
+
+#img1 {
+  max-height: 400px;
+  width: 30%;
+}
+
+#img2 {
+  max-height: 500px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+#img3 {
+  max-height: 500px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  width: 30%;
+}
+
+/* About section */
+.about {
+  padding: 3rem;
+  position: relative;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.5s;
+  margin-top: 3rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  padding: 1rem;
+  line-height: 2;
+  width: 50%;
+}
+.flex-item h2 i {
+  margin-right: 10px;
+}
+.first {
+  margin-right: 30px;
+}
+
+/* Gallary section */
+.gallary {
+  padding: 3rem;
+}
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.pictures img {
+  width: auto;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Contact section */
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.message-box {
+  background-color: #f0f8ff;
+  padding: 4rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.inner {
+  width: 70%;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 10;
+}
+.message-box form {
+  display: flex;
+  flex-direction: column;
+}
+.message-box * {
+  margin-bottom: 20px;
+}
+.message-box input {
+  height: 50px;
+  padding: 20px;
+  width: 50%;
+}
+.message-box textarea {
+  width: 50%;
+}
+.message-box button {
+  background-color: darkgreen;
+  padding: 1.3rem;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.message-box button:hover {
+  letter-spacing: 5px;
+}
+
+.message-box img {
+  max-height: 500px;
+  position: relative;
+  right: 100px;
+  top: 35px;
+  z-index: 100;
+}
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f8ff;
+}
+@media (max-width: 1746px) {
+  .texts {
+    padding: 2rem;
+    line-height: 2;
+  }
+}
+@media (max-width: 859px) {
+  #img1 {
+    display: none;
+  }
+  #img2 {
+    width: 50%;
+  }
+  #img3 {
+    width: 50%;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+  .message-box h2 {
+    font-size: 1rem;
+  }
+  .message-box input {
+    width: 60%;
+  }
+  .message-box textarea {
+    width: 60%;
+  }
+}
+
+@media (max-width: 822px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .message-box img {
+    opacity: 0;
+    display: none;
+  }
+  .inner {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner * {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+  .menu {
+    display: block;
+    width: 40px;
+    background-repeat: no-repeat !important;
+    background: url("images/menu.png");
+    background-position: center;
+    filter: invert(1);
+  }
+  .menu.active {
+    background: url("images/close.png");
+  }
+  .navigation.active {
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+    line-height: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    background-color: #f0f8ff;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+  }
+  .landing {
+    height: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  #img2 {
+    display: none;
+  }
+  #img3 {
+    display: none;
+  }
+  .landing {
+    background-image: url("images/furniture.jpeg");
+    color: darkgreen;
+  }
+  .hide {
+    display: none !important;
+  }
+  .pictures {
+    padding: 0;
+  }
+  .pictures img {
+    width: 100%;
+  }
+  .message-box {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .texts {
+    padding: 2rem;
+    line-height: 2;
+    text-align: center;
+  }
+  .texts h1 {
+    font-size: 1.5rem;
+  }
+  .features {
+    padding: 1rem;
+  }
+  .features h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .features i {
+    display: block;
+  }
+  .features p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .flex-item {
+    padding: 1rem;
+  }
+  .about {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .features {
+    padding: 0;
+  }
+  .texts p,
+  .texts h1 {
+    font-size: 1rem !important;
+  }
+  .texts a {
+    padding: 0.6rem;
+  }
+  header {
+    padding-left: 0;
+  }
+  header.active {
+    padding-left: 0;
+  }
+}
